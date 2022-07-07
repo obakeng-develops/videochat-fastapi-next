@@ -12,7 +12,7 @@ load_dotenv()
 account_sid = os.environ['TWILIO_ACC_SID']
 api_secret = os.environ['TWILIO_API_SECRET']
 api_sid = os.environ['TWILIO_API_SID']
-client = twilio.rest.Client(api_key, api_secret, account_sid)
+client = twilio.rest.Client(api_sid, api_secret, account_sid)
 
 # Create a FastAPI app
 app = FastAPI()
