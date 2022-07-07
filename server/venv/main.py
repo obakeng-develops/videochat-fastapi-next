@@ -14,6 +14,13 @@ client = twilio.rest.Client(api_key, api_secret, account_sid)
 app = FastAPI()
 
 
+def create_room(room_name: str):
+    try:
+        client.video.rooms(room_name).fetch()
+    except twilio.base.exceptions.TwilioRestException:
+        client.video.rooms.create(unique_name=room_name, type='go')
+
+
 @app.get("/")
 def index():
     return {
