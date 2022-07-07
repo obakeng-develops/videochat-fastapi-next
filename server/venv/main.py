@@ -43,6 +43,9 @@ def create_access_token(room_name: str):
 
 @app.get("/")
 def index():
+    """
+    Home page - http://127.0.0.1:8000/
+    """
     return {
         "message": "hello",
         "status": 200
