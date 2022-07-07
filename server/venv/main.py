@@ -1,4 +1,4 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, Request
 import os
 import uuid
 import twilio.jwt.access_token
@@ -39,6 +39,22 @@ def create_access_token(room_name: str):
     # add video grant to access token
     token.add_grant(video_grant)
     return token
+
+
+@app.post("/join")
+def join(request: Request):
+    """
+    Join a room
+    """
+    room_name = request.json.get("room_name")
+
+    create_room(room_name)
+
+    token = create_access_token(room_name)
+
+    return {
+        "token": token.to_jwt()
+    }
 
 
 @app.get("/")
