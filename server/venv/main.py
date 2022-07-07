@@ -16,6 +16,9 @@ app = FastAPI()
 
 
 def create_room(room_name: str):
+    """
+    Create or find a room.
+    """
     try:
         client.video.rooms(room_name).fetch()
     except twilio.base.exceptions.TwilioRestException:
