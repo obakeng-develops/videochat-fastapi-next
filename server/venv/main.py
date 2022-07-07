@@ -33,7 +33,7 @@ def create_access_token(room_name: str):
     Create an access token for a participant.
     """
     token = twilio.jwt.access_token.AccessToken(
-        account_sid, api_key, api_secret, identity=uuid.uuid4().int
+        account_sid, api_sid, api_secret, identity=uuid.uuid4().int
     )
 
     # create video grant
