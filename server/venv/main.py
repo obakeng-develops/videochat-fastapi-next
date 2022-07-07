@@ -1,9 +1,12 @@
+from dotenv import load_dotenv
 from fastapi import FastAPI, Request
 import os
 import uuid
 import twilio.jwt.access_token
 import twilio.jwt.access_token.grants
 import twilio.rest
+
+load_dotenv()
 
 # Twilio Credentials
 account_sid = os.environ['TWILIO_ACC_SID']
