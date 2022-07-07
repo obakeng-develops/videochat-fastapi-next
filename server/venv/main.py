@@ -2,7 +2,7 @@ from fastapi import FastAPI, Request
 import os
 import uuid
 import twilio.jwt.access_token
-import twilio.jwt.access_tokne.grants
+import twilio.jwt.access_token.grants
 import twilio.rest
 
 # Twilio Credentials
