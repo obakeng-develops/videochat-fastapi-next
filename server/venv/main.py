@@ -8,6 +8,7 @@ import twilio.rest
 account_sid = os.environ['TWILIO_ACC_SID']
 api_secret = os.environ['TWILIO_API_SECRET']
 api_key = os.environ['TWILIO_API_KEY']
+client = twilio.rest.Client(api_key, api_secret, account_sid)
 
 # Create a FastAPI app
 app = FastAPI()
