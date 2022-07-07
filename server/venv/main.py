@@ -22,6 +22,22 @@ def create_room(room_name: str):
         client.video.rooms.create(unique_name=room_name, type='go')
 
 
+def create_access_token(room_name: str):
+    """
+    Create an access token for a participant.
+    """
+    token = twilio.jwt.access_token.AccessToken(
+        account_sid, api_key, api_secret, identity=uuid.uuid4().int
+    )
+
+    # create video grant
+    video_grant = twilio.jwt.access_token.grants.VideoGrant(room=room_name)
+
+    # add video grant to access token
+    token.add_grant(video_grant)
+    return token
+
+
 @app.get("/")
 def index():
     return {
