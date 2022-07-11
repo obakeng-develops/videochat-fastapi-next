@@ -7,7 +7,8 @@ function Room() {
                 Participant 1
             </div>
             <div className="tracks flex space-x-6">
-
+                <button>Mute</button>
+                <button>End call</button>
             </div>
         </div>
         <div>
