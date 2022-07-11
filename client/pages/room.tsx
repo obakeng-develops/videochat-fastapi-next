@@ -4,7 +4,7 @@ function Room() {
     <div className="text-blue-500 underline text-3xl flex justify-center items-center font-bold mt-20">
         Toogle Room
     </div>
-    <div className="flex justify-center items-center space-x-20 my-32">
+    <div className="flex justify-center items-center space-x-20 my-20">
         <div>
             <div className="video border border-blue-500 h-72 w-72">
                 Participant 1
