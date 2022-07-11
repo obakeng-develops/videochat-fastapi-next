@@ -6,6 +6,9 @@ function Room() {
             <div className="video border border-blue-500 h-72 w-72">
                 Participant 1
             </div>
+            <div>
+                
+            </div>
         </div>
         <div>
             Participant 2
