@@ -8,7 +8,7 @@ const Home: NextPage = () => {
         Toogle Meet
       </div>
       <div className='flex flex-col my-6 space-y-3'>
-        <input type={"text"} className='p-3'/>
+        <input type={"text"} className='p-3 bg-slate-100'/>
         <button className='bg-gradient-to-r from-cyan-500 to-blue-500 p-3 text-white font-bold'>Join</button>
       </div>
     </div>
