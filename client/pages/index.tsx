@@ -4,7 +4,7 @@ const Home: NextPage = () => {
   return (
     <>
     <div className='flex flex-col justify-center items-center'>
-      <div className='text-5xl underline font-bold text-blue-600'>
+      <div className='text-6xl underline font-bold text-blue-600'>
         Toogle Meet
       </div>
       <div className='flex flex-col my-6 space-y-3'>
