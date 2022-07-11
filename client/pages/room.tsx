@@ -3,7 +3,7 @@ function Room() {
     <>
     <div className="flex justify-center items-center space-x-20">
         <div>
-            <div className="video border border-blue-500 w-50">
+            <div className="video border border-blue-500 h-72 w-72">
                 Participant 1
             </div>
         </div>
