@@ -7,7 +7,8 @@ const Home: NextPage = () => {
       Toogle Meet
     </div>
     <div>
-      
+      <input type={"text"}/>
+      <button className='bg-gradient-to-r from-cyan-500 to-blue-500'>Join</button>
     </div>
     </>
   )
