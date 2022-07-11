@@ -3,7 +3,7 @@ import type { NextPage } from 'next'
 const Home: NextPage = () => {
   return (
     <>
-    <div className='flex flex-col justify-center items-center'>
+    <div className='flex flex-col justify-center items-center my-44'>
       <div className='text-6xl underline font-bold text-blue-600'>
         Toogle Meet
       </div>
