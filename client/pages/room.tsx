@@ -1,6 +1,9 @@
 function Room() {
   return (
     <>
+    <div className="text-blue-500 underline text-3xl flex justify-center items-center">
+        Toogle Room
+    </div>
     <div className="flex justify-center items-center space-x-20 my-40">
         <div>
             <div className="video border border-blue-500 h-72 w-72">
