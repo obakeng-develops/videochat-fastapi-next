@@ -4,7 +4,17 @@ const Home: NextPage = () => {
 
   const handleSubmit = (event: any) => {
     event.preventDefault();
-    alert(`Here's your code: ${event.target.roomName.value}`);
+    
+    const response = fetch("/join", {
+      method: "POST",
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ room_name: event.target.roomName.value })
+    });
+
+
   }
 
   return (
