@@ -2,6 +2,9 @@
 
 This application is part of a tutorial to teach how to integrate Twilio (video service provider) with FastAPI (for processing backend) and NextJS (for displaying to the client).
 
+![Toogle Meet](https://user-images.githubusercontent.com/60041842/179915182-20a1b950-112e-4fdc-83f9-a70ff5e1a9a5.jpg)
+
+
 ## Yet To Complete
 
 - [ ] Fetch Access Token from backend
