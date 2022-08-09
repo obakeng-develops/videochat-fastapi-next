@@ -14,6 +14,9 @@ const Home: NextPage = () => {
       body: JSON.stringify({ room_name: event.target.roomName.value })
     });
 
+    const token = response.json();
+    console.log(token);
+
 
   }
 
