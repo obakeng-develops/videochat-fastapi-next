@@ -5,11 +5,12 @@ const Home: NextPage = () => {
   const handleSubmit = async (event: any) => {
     event.preventDefault();
     
-    const response = await fetch("/join", {
+    const response = await fetch("http://127.0.0.1:8000/join", {
       method: "POST",
       headers: {
         Accept: "application/json",
         "Content-Type": "application/json",
+        "Access-Control-Allow-Origin":"*"
       },
       body: JSON.stringify({ room_name: event.target.roomName.value })
     });
