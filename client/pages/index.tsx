@@ -2,10 +2,10 @@ import type { NextPage } from 'next'
 
 const Home: NextPage = () => {
 
-  const handleSubmit = (event: any) => {
+  const handleSubmit = async (event: any) => {
     event.preventDefault();
     
-    const response = fetch("/join", {
+    const response = await fetch("/join", {
       method: "POST",
       headers: {
         Accept: "application/json",
@@ -14,7 +14,7 @@ const Home: NextPage = () => {
       body: JSON.stringify({ room_name: event.target.roomName.value })
     });
 
-    const token = response.json();
+    const token = await response.json();
     console.log(token);
 
 
