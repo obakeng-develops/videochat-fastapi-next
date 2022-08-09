@@ -6,9 +6,9 @@ const Home: NextPage = () => {
   const handleSubmit = async (event: any) => {
     event.preventDefault();
 
-    const response = await axios.post("http://127.0.0.1:8000/join", payload);
+    const response = await axios.post(`http://127.0.0.1:8000/join?room_name=${event.target.roomName.value}`);
 
-    const token = await response.data;
+    const token = await response.data.token;
     console.log(token);
 
 
