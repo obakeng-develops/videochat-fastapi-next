@@ -17,6 +17,10 @@ client = twilio.rest.Client(api_sid, api_secret, account_sid)
 # Create a FastAPI app
 app = FastAPI()
 
+origins = [
+    "http://127.0.0.1:3000"
+]
+
 
 def create_room(room_name: str):
     """
