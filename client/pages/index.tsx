@@ -2,8 +2,6 @@ import type { NextPage } from 'next'
 
 const Home: NextPage = () => {
 
-  const roomName = document.getElementById("room-name");
-
   return (
     <>
     <div className='flex flex-col justify-center items-center my-44'>
