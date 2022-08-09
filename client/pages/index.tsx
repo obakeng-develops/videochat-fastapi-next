@@ -12,7 +12,7 @@ const Home: NextPage = () => {
 
     const response = await axios.post("http://127.0.0.1:8000/join", payload);
 
-    const token = await response.json();
+    const token = await response.data;
     console.log(token);
 
 
