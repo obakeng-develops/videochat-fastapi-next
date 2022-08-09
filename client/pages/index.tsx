@@ -11,7 +11,7 @@ const Home: NextPage = () => {
         Toogle Meet
       </div>
       <div className='flex flex-col my-8 space-y-3'>
-        <input type={"text"} className='p-3 bg-slate-100' placeholder='Enter room code'/>
+        <input type={"text"} className='p-3 bg-slate-100' id="room-name" placeholder='Enter room code'/>
         <button className='bg-gradient-to-r from-cyan-500 to-blue-500 p-3 text-white font-bold'>Join</button>
       </div>
     </div>
