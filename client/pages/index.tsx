@@ -3,7 +3,8 @@ import type { NextPage } from 'next'
 const Home: NextPage = () => {
 
   const handleSubmit = (event: Event) => {
-
+    event.preventDefault();
+    alert(`Here's your code: ${event.target.roomName.value}`);
   }
 
   return (
