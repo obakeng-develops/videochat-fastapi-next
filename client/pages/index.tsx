@@ -2,6 +2,10 @@ import type { NextPage } from 'next'
 
 const Home: NextPage = () => {
 
+  const handleSubmit = (event: Event) => {
+
+  }
+
   return (
     <>
     <div className='flex flex-col justify-center items-center my-44'>
