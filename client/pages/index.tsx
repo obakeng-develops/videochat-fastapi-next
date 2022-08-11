@@ -16,6 +16,10 @@ const Home: NextPage = () => {
     setRoomToken(token);
   }
 
+  const joinRoom = (token: string) => {
+    
+  }
+
   return (
     <>
     <div className='flex flex-col justify-center items-center my-44'>
