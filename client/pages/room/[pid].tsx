@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router'
 import * as Twilio from 'twilio'
-import * as Twilio from 'twilio-video'
+import * as Video from 'twilio-video'
 
 function Room() {
 
