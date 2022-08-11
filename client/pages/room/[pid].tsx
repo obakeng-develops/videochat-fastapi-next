@@ -9,6 +9,8 @@ function Room() {
 
     const connectVideoRoom = async (roomName: string, token: string) => {
 
+        const room = await Video.connect(token);
+
     }
 
     return (
