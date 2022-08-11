@@ -3,6 +3,7 @@ import { useRouter } from 'next/router'
 function Room() {
 
     const router = useRouter();
+    const { pid } = router.query;
 
     return (
         <>
