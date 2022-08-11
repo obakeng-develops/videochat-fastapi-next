@@ -13,7 +13,7 @@ const Home: NextPage = () => {
 
     let roomName: string = event.target.roomName.value;
 
-    const response = await axios.post(`http://127.0.0.1:8000/join?room_name=${event.target.roomName.value}`);
+    const response = await axios.post(`http://127.0.0.1:8000/join?room_name=${roomName}`);
 
     const token = await response.data.token;
     setRoomToken(token);
