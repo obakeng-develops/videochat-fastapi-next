@@ -18,6 +18,8 @@ function Room() {
 
     }
 
+    connectVideoRoom(pid, router.query.tkn);
+
     return (
         <>
         <div className="text-blue-500 underline text-3xl flex justify-center items-center font-bold mt-20">
