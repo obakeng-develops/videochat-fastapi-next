@@ -6,6 +6,7 @@ import axios from 'axios'
 const Home: NextPage = () => {
 
   const [roomToken, setRoomToken] = useState(null);
+  const router = useRouter();
 
   const handleSubmit = async (event: any) => {
     event.preventDefault();
@@ -17,7 +18,9 @@ const Home: NextPage = () => {
   }
 
   const joinRoom = (token: string) => {
-    
+
+
+
   }
 
   return (
