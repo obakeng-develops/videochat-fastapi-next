@@ -5,7 +5,7 @@ function Room() {
     const router = useRouter();
     const { pid } = router.query;
 
-    const joinVideoRoom = async (roomName: string, token: string) => {
+    const connectVideoRoom = async (roomName: string, token: string) => {
 
     }
 
