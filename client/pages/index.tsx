@@ -17,6 +17,8 @@ const Home: NextPage = () => {
 
     const token = await response.data.token;
     setRoomToken(token);
+
+    joinRoom(roomName, token);
   }
 
   const joinRoom = (roomName: string, token: string) => {
