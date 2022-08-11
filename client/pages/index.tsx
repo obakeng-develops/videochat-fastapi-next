@@ -17,9 +17,9 @@ const Home: NextPage = () => {
     setRoomToken(token);
   }
 
-  const joinRoom = (token: string) => {
+  const joinRoom = (roomName: string, token: string) => {
 
-
+    router.push(`/room/${roomName}?tkn=${token}`);
 
   }
 
