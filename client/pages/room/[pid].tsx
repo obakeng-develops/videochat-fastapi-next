@@ -6,7 +6,7 @@ import * as Video from 'twilio-video'
 function Room() {
 
     const router = useRouter();
-    const { pid } : ParsedUrlQuery = router.query;
+    const { pid } = router.query;
 
     const connectVideoRoom = async (roomName: string, token: string) => {
 
