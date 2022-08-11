@@ -1,4 +1,5 @@
 import type { NextPage } from 'next'
+import { useState } from 'react'
 import axios from 'axios'
 
 const Home: NextPage = () => {
