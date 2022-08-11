@@ -5,6 +5,10 @@ function Room() {
     const router = useRouter();
     const { pid } = router.query;
 
+    const joinVideoRoom = async (roomName: string, token: string) => {
+
+    }
+
     return (
         <>
         <div className="text-blue-500 underline text-3xl flex justify-center items-center font-bold mt-20">
