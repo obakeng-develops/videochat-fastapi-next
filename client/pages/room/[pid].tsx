@@ -1,11 +1,12 @@
 import { useRouter } from 'next/router'
+import { ParsedUrlQuery } from 'querystring';
 import * as Twilio from 'twilio'
 import * as Video from 'twilio-video'
 
 function Room() {
 
     const router = useRouter();
-    const { pid } = router.query;
+    const { pid } : ParsedUrlQuery = router.query;
 
     const connectVideoRoom = async (roomName: string, token: string) => {
 
