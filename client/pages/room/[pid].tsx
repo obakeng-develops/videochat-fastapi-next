@@ -2,7 +2,7 @@ import { useRouter } from 'next/router'
 
 function Room() {
 
-
+    const router = useRouter();
 
     return (
         <>
