@@ -4,6 +4,8 @@ import axios from 'axios'
 
 const Home: NextPage = () => {
 
+  const [roomToken, setRoomToken] = useState(null);
+
   const handleSubmit = async (event: any) => {
     event.preventDefault();
 
