@@ -11,15 +11,13 @@ function Room() {
     const connectVideoRoom = async (roomName: string, token: string) => {
 
         const room = await Video.connect(token, {
-            room: roomName,
+            name: roomName,
         });
 
         return room
         console.log(room);
 
     }
-
-    connectVideoRoom(pid, router.query.tkn);
 
     return (
         <>
