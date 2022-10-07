@@ -20,6 +20,11 @@ api_secret = os.environ['TWILIO_API_SECRET']
 api_sid = os.environ['TWILIO_API_SID']
 client = twilio.rest.Client(api_sid, api_secret, account_sid)
 
+
+class Room(BaseModel):
+    room_name: str
+
+
 # Create a FastAPI app
 app = FastAPI()
 
