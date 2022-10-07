@@ -1,8 +1,12 @@
 from dotenv import load_dotenv
-from fastapi import FastAPI, Request
-from fastapi.middleware.cors import CORSMiddleware
 import os
 import uuid
+
+# FastAPI
+from fastapi import FastAPI, Request
+from fastapi.middleware.cors import CORSMiddleware
+
+# Twilio
 import twilio.jwt.access_token
 import twilio.jwt.access_token.grants
 import twilio.rest
