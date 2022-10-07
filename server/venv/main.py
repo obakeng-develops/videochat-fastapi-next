@@ -68,13 +68,13 @@ def create_access_token(room_name: str):
 
 
 @app.post("/join")
-def join(room_name: str):
+def join(room: Room):
     """
     Join a room - http://127.0.0.1:8000/join
     """
-    create_room(room_name)
+    create_room(room.room_name)
 
-    token = create_access_token(room_name)
+    token = create_access_token(room.room_name)
 
     return {
         "token": token.to_jwt()
