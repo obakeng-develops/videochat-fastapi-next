@@ -20,4 +20,17 @@ const Home: NextPage = () => {
   )
 }
 
+export async function getServerSideProps() {
+
+  const res = await fetch(`http://127.0.0.1:8000/join`)
+  const data = await res.json()
+
+  return {
+    props: {
+      data
+    }
+  }
+  
+}
+
 export default Home
