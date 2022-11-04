@@ -13,7 +13,7 @@ const Home: NextPage = ({ data }) => {
       </div>
       <form className='flex flex-col my-8 space-y-3' onSubmit={handleSubmit}>
         <input type={"text"} name="roomName" className='p-3 bg-slate-100' id="room-name" placeholder='Enter room code'/>
-        <button className='bg-gradient-to-r from-cyan-500 to-blue-500 p-3 text-white font-bold'>Join</button>
+        <button className='bg-gradient-to-r from-cyan-500 to-blue-500 p-3 text-white font-bold' type='submit'>Join</button>
       </form>
     </div>
     </>
