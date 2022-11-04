@@ -5,7 +5,23 @@ import axios from 'axios'
 
 const Home: NextPage = () => {
 
-  
+  const [token, setToken] = useState(null)
+
+  function getRoomCode() {
+
+    let roomCode = document.getElementById('room-name')
+
+  }
+
+  async function handleSubmit(event: Event) {
+
+    event.preventDefault
+
+    let token = await fetch('http://127.0.0.1:8000/join')
+
+    console.log(token)
+
+  }
 
   return (
     <>
