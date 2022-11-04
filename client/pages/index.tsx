@@ -13,13 +13,25 @@ const Home: NextPage = () => {
 
   }
 
-  async function handleSubmit(event: Event) {
+  async function handleSubmit(event: any) {
 
     event.preventDefault
 
-    let token = await fetch('http://127.0.0.1:8000/join')
+    let data = {
+      room: getRoomCode()
+    }
 
-    console.log(token)
+    let token = await fetch('http://127.0.0.1:8000/join', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(data)
+    })
+
+    let result = await token.json()
+
+    console.log(result)
 
   }
 
@@ -29,7 +41,7 @@ const Home: NextPage = () => {
       <div className='text-6xl underline font-bold text-blue-600'>
         Toogle Meet
       </div>
-      <form className='flex flex-col my-8 space-y-3'>
+      <form className='flex flex-col my-8 space-y-3' onSubmit={handleSubmit}>
         <input type={"text"} name="roomName" className='p-3 bg-slate-100' id="room-name" placeholder='Enter room code'/>
         <button className='bg-gradient-to-r from-cyan-500 to-blue-500 p-3 text-white font-bold' type='submit'>Join</button>
       </form>
