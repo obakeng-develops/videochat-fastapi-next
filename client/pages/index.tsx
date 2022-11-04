@@ -3,7 +3,7 @@ import { useRouter } from 'next/router'
 import { useState } from 'react'
 import axios from 'axios'
 
-const Home: NextPage = () => {
+const Home: NextPage = ({ data }) => {
 
   return (
     <>
