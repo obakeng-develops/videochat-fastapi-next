@@ -5,28 +5,6 @@ import axios from 'axios'
 
 const Home: NextPage = () => {
 
-  const [roomToken, setRoomToken] = useState(null);
-  const router = useRouter();
-
-  const handleSubmit = async (event: any) => {
-    event.preventDefault();
-
-    let roomName: string = event.target.roomName.value;
-
-    const response = await axios.post(`http://127.0.0.1:8000/join?room_name=${roomName}`);
-
-    const token = await response.data.token;
-    setRoomToken(token);
-
-    joinRoom(roomName, token);
-  }
-
-  const joinRoom = (roomName: string, token: string) => {
-
-    router.push(`/room/${roomName}?tkn=${token}`);
-
-  }
-
   return (
     <>
     <div className='flex flex-col justify-center items-center my-44'>
